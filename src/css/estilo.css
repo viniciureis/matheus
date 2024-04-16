@@ -3,13 +3,13 @@
     padding: 0px;
 }
 body{
-  
+ 
     color: white;
 }
 .cabecalho{
     display: flex;
     justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 10px;
     margin: 0 auto;
     background-color:#c0f420;
 }
@@ -20,7 +20,8 @@ ul {
 }
 
 .cabecalho .logo{
-    width: 55px;
+    width: 75px;
+    padding-left: 20px;
 }
 
 .cabecalho .menu{
@@ -29,6 +30,9 @@ ul {
     height: 0px;
 }
 
+.bacd{
+    background-color: black;padding-left: 20px;
+}
 .cabecalho nav li a{
     font-weight: bold;
     color: white;
@@ -56,7 +60,7 @@ footer{
     background-image: url('../../Foto-principal03.png'); /* Substitua 'seu-background.jpg' com o caminho para sua imagem de background */
     background-repeat: no-repeat;
     background-size: cover; /* Cobrir toda a área do contêiner */
-    background-position: right center ; /* Alinha o background à direita no topo */
+    background-position: right center  ; /* Alinha o background à direita no topo */
 }
 
 .container:before {
@@ -111,9 +115,16 @@ footer{
 .button{
     margin-top: 10px;
     padding: 10px;
+   
     background-color: #121212;
     color: white;
     border-color: #121212;
+}
+.align{
+    position: absolute;
+   z-index: 1;
+    padding-left: 1000px;
+    
 }
 /* Media queries para telas menores */
 @media only screen and (max-width: 768px) {
@@ -138,6 +149,10 @@ footer{
 }
 
 @media only screen and (max-width: 480px) {
+
+    *{
+        padding: 0px;
+    }
     .cabecalho {
         padding: 15px;
     }
