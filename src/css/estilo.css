@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background-color: black;
+  
     color: white;
 }
 .cabecalho{
@@ -38,7 +38,18 @@ ul {
     transition: 0.3s;
     text-decoration: none;
 }
+footer{
+    margin-top: 1px;
+    display: flex;
+    background-color: black;
+    padding: 20px;
+}
 
+.foiuter{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
 .container {
     position: relative;
     height: 500px; /* Define a altura desejada */
@@ -95,6 +106,7 @@ ul {
 .fundo{
     background-color:#c0f420 ;
     color: black;
+    text-align: center;
 }
 /* Media queries para telas menores */
 @media only screen and (max-width: 768px) {
@@ -122,6 +134,9 @@ ul {
     .cabecalho {
         padding: 15px;
     }
+    .cabecalho.menu{
+        height: 50px;
+    }
     
     .cabecalho .logo {
         width: 40px;
@@ -133,5 +148,8 @@ ul {
     
     .ft {
         font-size: 30px;
+    }
+    .grid33{
+        margin-top: 50px;
     }
 }
