@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 auto;
+    background-color:#c0f420;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.cabecalho .logo{
+    width: 55px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    height: 500px; /* Define a altura desejada */
+    background-image: url('8.png'); /* Substitua 'seu-background.jpg' com o caminho para sua imagem de background */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cobrir toda a área do contêiner */
+    background-position: right r ; /* Alinha o background à direita no topo */
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(0,0,0,1)8%, rgba(0,0,0,0.8)50%, rgba(0,0,0,1)95% ); /* Sobreposição preta com 50% de opacidade */
+}
+
+.content {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 20px; /* Ajuste conforme necessário */
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    z-index: 5; /* Garante que o conteúdo fique acima da sobreposição preta */
+}
+
+.ft{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.fte{
+    position: fixed;
+    top: 590px;
+    right: 20px;
+    cursor: pointer;
+    width: 4%;
+}
+.grid33{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ftr{
+    width: 90%;padding-left: 20px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+}
+.fundo{
+    background-color:#c0f420 ;
+    color: black;
+}
+/* Media queries para telas menores */
+@media only screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .cabecalho .menu {
+        margin-top: 20px;
+    }
+    
+    .cabecalho nav li a {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    .ft {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cabecalho {
+        padding: 15px;
+    }
+    
+    .cabecalho .logo {
+        width: 40px;
+    }
+    
+    .cabecalho nav li a {
+        font-size: 18px;
+    }
+    
+    .ft {
+        font-size: 30px;
+    }
+}
