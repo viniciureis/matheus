@@ -8,40 +8,62 @@ body{
 }
 .cabecalho{
     display: flex;
-    justify-content: space-between;
-  padding-top: 10px;
-    margin: 0 auto;
-    background-color:#c0f420;
-}
-
-ul {
-    text-decoration: none;
-    list-style: none;
-}
-
-.cabecalho .logo{
-    width: 75px;
-    padding-left: 20px;
-}
-
-.cabecalho .menu{
+   justify-content: space-between;
+   padding: 30px;
+   max-width: 1440px;
+   margin: 0 auto;
+  }
+  .cabecalho .logo{
+    width: 55px;
+  }
+  .cabecalho .menu{
+  
     display: flex;
+    
     align-items: center;
-    height: 0px;
-}
-
-.bacd{
-    background-color: black;padding-left: 20px;
-}
-.cabecalho nav li a{
+    height: 100%;
+  }
+  
+  .cabecalho nav li a{
     font-weight: bold;
     color: white;
     font-size: 25px;
     padding: 10px 20px;
     border-radius: 50px;
     transition: 0.3s;
+  }
+ 
+
+ul{
     text-decoration: none;
 }
+
+.cabecalho{
+    display: flex;
+   justify-content: space-between;
+ color: black;
+   margin: 0 auto;
+  }
+  .cabecalho .logo{
+    width: 55px;
+  }
+  .cabecalho .menu{
+  gap: 20px;
+    display: flex;
+    position: relative;
+    margin-bottom: -200px;
+    align-items: center;
+    
+
+}
+  
+ 
+
+.bacd{
+    background-color: black;padding-left: 20px;
+    margin-top: 200px;
+}
+
 footer{
     margin-top: 1px;
     display: flex;
@@ -54,33 +76,34 @@ footer{
     gap: 20px;
     padding-left: 20px;
 }
-.container {
-    position: relative;
-    height: 500px; /* Define a altura desejada */
-    background-image: url('../../Foto-principal03.png'); /* Substitua 'seu-background.jpg' com o caminho para sua imagem de background */
-    background-repeat: no-repeat;
-    background-size: cover; /* Cobrir toda a área do contêiner */
-    background-position: right center  ; /* Alinha o background à direita no topo */
-}
+.fundo-video{
 
-.container:before {
+    position: absolute;
+    z-index: -1;
+    width: 98.75vw;
+    height: 99vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+   }
+   .fundo-video .video{
+    height: 99vh;
+   width: 99vw;
+   }
+   .fundo-video::after{
     content: "";
+   
+    height: 98.75vh;
+    width: 98.75vw;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,rgba(0,0,0,1)0%, rgba(0,0,0,0.8)0%, rgba(0,0,0,1)23000% ); /* Sobreposição preta com 50% de opacidade */
-}
-
-.content {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    padding: 20px; /* Ajuste conforme necessário */
-    box-sizing: border-box;
-    position: relative;
-    color: white;
-    z-index: 5; /* Garante que o conteúdo fique acima da sobreposição preta */
-}
+    margin-bottom: 5200px;
+  
+  background: linear-gradient(90deg,rgba(0,0,0,1)0%, rgba(0,0,0,0.8)0%, rgba(0,0,0,1)1120% );
+  
+   }
+   
 
 .ft{
     font-size: 50px;
@@ -125,6 +148,12 @@ footer{
    z-index: 1;
     padding-left: 1000px;
     
+}
+a{
+    color: #121212;
+}
+a{
+    text-decoration: none;
 }
 /* Media queries para telas menores */
 @media only screen and (max-width: 768px) {
@@ -173,5 +202,36 @@ footer{
     }
     .grid33{
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 1390px) {
+    .cabecalho {
+        padding: 20px;
+    }
+
+    .cabecalho nav li a {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    .bacd{
+        margin-top: 703px;
+    }
+    .fundo-video{
+        width: 99vw;
+      
+    }
+    .fundo-video::after{
+        width: 100vw;
+       
+    }
+    footer{
+        margin-bottom: -2500px;
+    }
+    .button{
+        margin-left: -900px;
+    }
+    .align{
+        padding-left: 180px;
     }
 }
