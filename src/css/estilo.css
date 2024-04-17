@@ -206,6 +206,9 @@ a{
 }
 
 @media (min-width: 1390px) {
+    ul{
+        list-style: none;
+    }
     .cabecalho {
         padding: 20px;
     }
@@ -215,7 +218,8 @@ a{
         padding: 10px 15px;
     }
     .bacd{
-        margin-top: 703px;
+        margin-top: 403px;
+        width: 98vw;
     }
     .fundo-video{
         width: 99vw;
@@ -223,7 +227,7 @@ a{
     }
     .fundo-video::after{
         width: 100vw;
-       
+       height: 100vw;
     }
     footer{
         margin-bottom: -2500px;
@@ -233,5 +237,13 @@ a{
     }
     .align{
         padding-left: 180px;
+    }
+    .fte{
+        top: 880px;
+    }
+    .ft{
+        padding-top: 80px;
+        font-size: 90px;
+        padding-left: 90px;
     }
 }
