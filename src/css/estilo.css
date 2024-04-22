@@ -239,6 +239,9 @@ a{
         left:0px ;
         right: 0px;
     }
+    .align{
+        padding-left: 250px;
+    }
 }
 @media (min-width:1390x){
     
