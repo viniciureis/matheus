@@ -189,7 +189,7 @@ a{
     text-decoration: none;
 }
 /* Media queries para telas menores */
-@media  (min-width: 768px) {
+@media  (min-width: 568px) and (max-width:769px) {
     .cabecalho {
         flex-direction: column;
         align-items: center;
@@ -219,6 +219,9 @@ a{
         padding: 0px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .mt3{
+        margin-top: 50px;
     }
     .cabecalho {
         padding: 8px; /* Reduzindo o padding para telas menores */
