@@ -242,6 +242,7 @@ a{
     .fte{
         left:0px ;
         right: 0px;
+        width: 50%;
     }
     .align{
         padding-left: 220px;
