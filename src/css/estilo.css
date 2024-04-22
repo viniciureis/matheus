@@ -4,6 +4,7 @@
 }
 body{
  
+    background-color: black;
     color: white;
 }
 .cabecalho{
@@ -61,7 +62,7 @@ ul{
 
 .bacd{
     background-color: black;padding-left: 20px;
-    margin-top: 200px;
+  
 }
 
 footer{
@@ -104,6 +105,38 @@ footer{
   
    }
    
+   .container1 {
+    position: relative;
+    
+}
+
+.imagem {
+    width: 50%;
+   padding-bottom: 10px;
+    padding-left: 30%;
+    height: auto;
+    transition: .5s; /* Transição de 500ms para deixar suave */
+}
+.mt3{
+    padding-top: 550px;
+}
+.texto-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.container1:hover .texto-hover  {
+    opacity: 1;
+    background-color: blue;
+}
 
 .ft{
     font-size: 50px;
@@ -160,90 +193,46 @@ a{
     .cabecalho {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 10px; /* Reduzindo o padding para telas menores */
     }
     
     .cabecalho .menu {
-        margin-top: 20px;
+        margin-top: 10px; /* Ajuste para telas menores */
     }
     
     .cabecalho nav li a {
-        font-size: 20px;
-        padding: 8px 15px;
+        font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+        padding: 6px 12px; /* Ajuste para telas menores */
     }
     
     .ft {
-        font-size: 40px;
+        font-size: 30px; /* Reduzindo o tamanho da fonte para telas menores */
+        padding: 10px; /* Reduzindo o padding para telas menores */
     }
 }
 
 @media only screen and (max-width: 480px) {
-
-    *{
-        padding: 0px;
-    }
     .cabecalho {
-        padding: 15px;
+        padding: 8px; /* Reduzindo o padding para telas menores */
     }
-    .cabecalho.menu{
-        height: 50px;
+    
+    .cabecalho.menu {
+        height: auto; /* Ajuste para telas menores */
     }
     
     .cabecalho .logo {
-        width: 40px;
+        width: 40px; /* Reduzindo o tamanho do logo para telas menores */
     }
     
     .cabecalho nav li a {
-        font-size: 18px;
+        font-size: 14px; /* Reduzindo o tamanho da fonte para telas menores */
     }
     
     .ft {
-        font-size: 30px;
+        font-size: 24px; /* Reduzindo o tamanho da fonte para telas menores */
     }
-    .grid33{
-        margin-top: 50px;
-    }
-}
-
-@media (min-width: 1390px) {
-    ul{
-        list-style: none;
-    }
-    .cabecalho {
-        padding: 20px;
-    }
-
-    .cabecalho nav li a {
-        font-size: 20px;
-        padding: 10px 15px;
-    }
-    .bacd{
-        margin-top: 403px;
     
-    }
-    .fundo-video{
-        width: 99vw;
-      
-    }
-    .fundo-video::after{
-        width: 100vw;
-       height: 100vw;
-    }
-    footer{
-        margin-bottom: -2500px;
-    }
-    .button{
-        margin-left: -900px;
-    }
-    .align{
-        padding-left: 1580px;
-    }
-    .fte{
-        top: 880px;
-    }
-    .ft{
-        padding-top: 80px;
-        font-size: 90px;
-        padding-left: 90px;
+    .grid33 {
+        margin-top: 20px; /* Ajuste para telas menores */
     }
 }
