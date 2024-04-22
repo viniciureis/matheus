@@ -189,7 +189,7 @@ a{
     text-decoration: none;
 }
 /* Media queries para telas menores */
-@media only screen and (max-width: 768px) {
+@media  (min-width: 768px) {
     .cabecalho {
         flex-direction: column;
         align-items: center;
