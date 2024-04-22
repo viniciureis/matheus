@@ -251,6 +251,9 @@ a{
     .align{
         padding-left: 220px;
     }
+    .ftr{
+        width: 80%;
+    }
 }
 @media (min-width:1390px){
     
