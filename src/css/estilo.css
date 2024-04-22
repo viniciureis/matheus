@@ -214,7 +214,11 @@ a{
 @media only screen and (max-width: 480px) {
     *{
         margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
         padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .cabecalho {
         padding: 8px; /* Reduzindo o padding para telas menores */
