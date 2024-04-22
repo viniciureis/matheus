@@ -121,10 +121,12 @@ footer{
 }
 .texto-hover {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top:39%;
+    left: 45%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
+    width: 48.5%;
+    height: 80%;
     color: white;
     padding: 10px;
     opacity: 0;
@@ -266,4 +268,19 @@ a{
    .mt3{
     padding-top: 720px;
    } 
+   .texto-hover{
+    position: absolute;
+    top:42%;
+    left: 44.9%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    height: 85%;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
 }
