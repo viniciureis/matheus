@@ -221,7 +221,7 @@ a{
         padding-right: 0px;
     }
     .mt3{
-        margin-top: 50px;
+        margin-top: 150px;
     }
     .cabecalho {
         padding: 8px; /* Reduzindo o padding para telas menores */
@@ -256,6 +256,9 @@ a{
     }
     .ftr{
         width: 80%;
+    }
+    .texto-hover{
+        top: 20%;
     }
 }
 @media (min-width:1390px){
