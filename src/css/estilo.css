@@ -258,7 +258,8 @@ a{
         width: 80%;
     }
     .texto-hover{
-        top: 20%;
+        top: 30%;
+        left: 10%;
     }
 }
 @media (min-width:1390px){
